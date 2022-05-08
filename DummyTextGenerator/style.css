@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container{
     display: flex;
     justify-content: center;
     height: 100vh;
+    overflow: hidden;
 }
 #formId{
     width: 50vw;
-    height: 20vh;
+    height: 35vh;
     display: block;
     padding-top: 100px;
     display: flex;
@@ -45,4 +54,29 @@ input:focus{
     background-color: blueviolet;
     color: aliceblue;
     font-size: 1rem;
+}
+
+
+@media(max-width:500px){
+    #formId{
+        width: 100vw;
+        height: 35vh;
+        display: block;
+        /* flex-direction: column; */
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(85, 7, 85);;
+        
+    }   
+    
+#Text{
+    margin-top: 15%;
+    /* padding: 2px; */
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 1rem;
+    /* text-align: center; */
+    width: 100%;
+}
 }
